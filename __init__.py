@@ -33,7 +33,7 @@ class CMW_OT_make_webp(bpy.types.Operator):
             bpy.ops.render.render(animation=True)
             scene.render.filepath = pre_filepath
             scene.render.image_settings.file_format = pre_format
-            imgs = [Image.open(f) for f in Path(tmpdir).glob("*.jpg")]
+            imgs = [Image.open(f) for f in sorted(Path(tmpdir).glob("*.jpg"))]
             imgs[0].save(
                 Path(pre_filepath) / "webp.webp",
                 save_all=True,

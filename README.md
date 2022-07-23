@@ -4,7 +4,7 @@ Make webp file.
 
 ## Installation
 
-- Download https://github.com/SaitoTsutomu/MakeWebp/archive/refs/heads/main.zip
+- Download https://github.com/SaitoTsutomu/MakeWebp/archive/refs/heads/master.zip
 - Start Blender.
 - Edit menu -> Preferences
   - Select the "Add-ons" tab.
